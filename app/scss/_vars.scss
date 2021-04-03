@@ -5,3 +5,13 @@ $default: #5a5a5a;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 }
+
+%line {
+	position: absolute;
+	content: '';
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #6d7278;
+}

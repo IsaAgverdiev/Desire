@@ -11,5 +11,12 @@ $(function () {
 		arrows: false,
 		fade: true,
 		autoplay: true
-	})
+	});
+
+	var mixer = mixitup('.gallery__inner', {
+		load: {
+			filter: '.living'
+		}
+	});
+
 })
