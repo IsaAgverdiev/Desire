@@ -15,3 +15,10 @@ $default: #5a5a5a;
 	height: 1px;
 	background-color: #6d7278;
 }
+
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+	@return m#{i}x(#{$numbers});
+}
