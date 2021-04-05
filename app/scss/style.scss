@@ -282,8 +282,10 @@
 }
 
 .breadcrumbs {
-	background: rgba(#dfdfdf, .5);
+	background: rgba(#dfdfdf, .7);
 	padding: 13px 14px;
+	position: relative;
+	z-index: 99;
 
 	&__list {
 		display: flex;
@@ -600,6 +602,16 @@
 		height: 100%;
 		object-fit: cover;
 	}
+
+	&.gallery-page {
+		.gallery__item img{
+				max-height: 1165px;
+		}
+		.gallery__item:nth-child(8) {
+			grid-column: span 2;
+			grid-row: span 2;
+		}
+	}
 }
 
 .blog-box {
@@ -719,7 +731,7 @@
 		left: 0;
 		right: 0;
 		height: 360px;
-		z-index: -1	;
+		z-index: -1;
 		background-image: url(../images/inspiration-bg.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -790,10 +802,15 @@
 
 .partners {
 	padding: 16px 0 60px;
+
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 		align-items: center;
 		justify-items: center;
 	}
+}
+
+.map {
+	margin-top: -53px;
 }
