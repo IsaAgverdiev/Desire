@@ -65,3 +65,35 @@ body {
 		}
 	}
 }
+
+.info-email {
+	font-weight: 600;
+	font-size: 14px;
+	color: $title;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	display: inline-block;
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		background-image: url('../images/envelope.svg');
+		background-repeat: no-repeat;
+		top: 9px;
+		left: 0;
+		width: 16px;
+		height: 12px;
+	}
+}
+
+.btn {
+	background-color: $title;
+	border: none;
+	color: #fffff0;
+	border-radius: 26px;
+	padding: 6px 12px;
+	min-width: 160px;
+	margin-left: 9px;
+	cursor: pointer;
+}
