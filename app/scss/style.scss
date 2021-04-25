@@ -18,6 +18,10 @@
 		padding: 0;
 		cursor: pointer;
 	}
+
+	&__btn-menu {
+		display: none;
+	}
 }
 
 .logo {
@@ -74,24 +78,13 @@
 		width: 540px;
 	}
 
-	&__info-title {
-		@extend %title-font;
-		color: $title;
-		margin-bottom: 14px;
-		line-height: 23px;
-	}
-
-	&__info-text {
-		margin-bottom: 16px;
-		max-width: 475px;
-	}
-
 	&__form {
 		display: flex;
 	}
 
 	&__form-input {
 		padding: 6px 10px 6px 18px;
+		// min-width: 160px;
 		border-radius: 21px;
 		background-color: transparent;
 		border: 1px solid rgba($title, .7);
@@ -257,12 +250,18 @@
 
 	&__list {
 		display: flex;
+		overflow-x: auto;
+	}
+	&__item {
+		position: relative;
+		padding-right: 9px;
 	}
 
 	&__item::after {
 		content: '/';
-		margin-left: -4px;
-		margin-right: 4px;
+		// margin-left: -4px;
+		// margin-right: 4px;
+		position: absolute;
 	}
 
 	&__item:last-child::after {
@@ -1233,6 +1232,7 @@
 			color: #a1a1a1;
 		}
 	}
+
 	&__form-label {
 		width: 100%;
 		font-size: 14px;
@@ -1347,3 +1347,5 @@
 		color: #a1a1a1;
 	}
 }
+
+@import 'media';
