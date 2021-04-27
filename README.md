@@ -1,5 +1,5 @@
 ﻿# Сайт дизайнерской мебели 
-> ссылка на проект <a href="https://isaagverdiev.github.io/desire/">тут</a>
+> ссылка на проект <a href="https://isaagverdiev.github.io/Desire/">тут</a>
 ## Задача: Нужно сверстать многостраничный сайт.
 
 ## Что было сделано:

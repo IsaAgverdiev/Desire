@@ -1,14 +1,14 @@
 {
   "name": "gulp-start",
   "version": "1.0.0",
-  "description": "",
+  "description": "Многостраничный сайт",
   "main": "index.js",
-  "homepage": "https://isaagverdiev.github.io/desire/",
+  "homepage": "https://isaagverdiev.github.io/Desire/",
   "scripts": {
     "predeploy": "gulp build",
     "deploy": "gh-pages -d dist"
   },
-  "author": "Vadym Prokopchuk",
+  "author": "Isa Agverdiev",
   "license": "ISC",
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
